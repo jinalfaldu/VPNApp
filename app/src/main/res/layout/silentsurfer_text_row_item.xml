@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="4dp"
+        android:background="@drawable/ava_box_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp">
+        <ImageView
+            android:id="@+id/iv_ivon"
+            android:src="@drawable/ava_ic_canada"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"/>
+        <TextView
+            android:layout_toRightOf="@+id/iv_ivon"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/popins_medium"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_error"/>
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_selected"
+            android:src="@drawable/ava_ic_select"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001321"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/ava_s_box"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/wifi_ssid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="WIFI SSID"
+                        android:textColor="#fff"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/signal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="Signal Strength"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="Security"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/connection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="Connection"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/ip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="IP Address"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="MAC Address"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_ssid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_signal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_connection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:fontFamily="@font/popins_medium"
+                    android:text="WiFi hotspot secure and protect privacy.
+Fastest - Connect successfully as a hare with high VPN speed."
+                    android:textColor="@color/txt_clr"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:fontFamily="@font/popins_medium"
+                    android:text="Stay safe online without slowing down.Our optimized global server network offers a seamless experience for both work and play."
+                    android:textColor="@color/txt_clr"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_native"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp">
+
+                <include layout="@layout/silentsurfer_bignative_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

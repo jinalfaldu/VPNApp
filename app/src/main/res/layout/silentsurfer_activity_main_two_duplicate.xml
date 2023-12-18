@@ -1,0 +1,700 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ava_ic_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ava_ic_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_above="@+id/bottom_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <ImageView
+                                    android:id="@+id/iv_menu"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_8sdp"
+                                    android:src="@drawable/ava_ic_menu_file"
+                                    app:tint="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/header_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/iv_menu"
+                                    android:fontFamily="@font/popins_bold"
+                                    android:text="@string/app_name"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+
+                                    android:id="@+id/home_layout"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:orientation="vertical">
+
+                                    <androidx.core.widget.NestedScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginBottom="@dimen/_10sdp">
+
+                                            <RelativeLayout
+                                                android:id="@+id/rl_ad"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginBottom="10dp">
+
+                                                <include layout="@layout/silentsurfer_allsmallnative" />
+
+                                            </RelativeLayout>
+
+
+                                            <RelativeLayout
+                                                android:id="@+id/bottom_layout"
+                                                android:layout_width="@dimen/_230sdp"
+                                                android:layout_height="@dimen/_45sdp"
+                                                android:layout_below="@+id/rl_ad"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="@dimen/_10sdp"
+                                                android:background="@drawable/ava_box1"
+                                                android:gravity="center">
+
+                                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center">
+
+                                                    <ImageView
+                                                        android:id="@+id/img_server"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginStart="10dp"
+                                                        android:layout_marginTop="10dp"
+                                                        android:layout_marginEnd="10dp"
+                                                        android:layout_marginBottom="10dp"
+                                                        android:padding="3dp"
+                                                        android:src="@drawable/ava_ic_main_language" />
+
+                                                    <TextView
+                                                        android:id="@+id/country_name"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerInParent="true"
+                                                        android:layout_toLeftOf="@+id/ii"
+                                                        android:layout_toRightOf="@+id/img_server"
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:text="@string/choose_server"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14dp"
+                                                        android:textStyle="bold" />
+
+                                                    <ImageView
+                                                        android:id="@+id/ii"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentRight="true"
+                                                        android:layout_centerInParent="true"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginStart="10dp"
+                                                        android:layout_marginEnd="10dp"
+                                                        android:padding="3dp"
+                                                        android:src="@drawable/ava_right_arrow" />
+                                                </RelativeLayout>
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/bottom_layout">
+
+                                                <RelativeLayout
+                                                    android:id="@id/ii_"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="@dimen/_10sdp"
+                                                    android:gravity="center">
+
+                                                    <RelativeLayout
+                                                        android:layout_width="@dimen/_230sdp"
+                                                        android:layout_height="@dimen/_170sdp">
+
+                                                        <com.airbnb.lottie.LottieAnimationView
+                                                            android:id="@+id/lottie_connect"
+                                                            android:layout_width="@dimen/_230sdp"
+                                                            android:layout_height="@dimen/_170sdp"
+                                                            android:visibility="invisible"
+                                                            app:lottie_autoPlay="true"
+                                                            app:lottie_fileName="earht.json"
+                                                            app:lottie_loop="true" />
+
+                                                        <ImageView
+                                                            android:id="@+id/iv_connect"
+                                                            android:layout_width="@dimen/_100sdp"
+                                                            android:layout_height="@dimen/_100sdp"
+                                                            android:layout_centerInParent="true"
+                                                            android:src="@drawable/ava_ic_disconnect" />
+
+                                                    </RelativeLayout>
+
+                                                </RelativeLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/ll_feed"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@+id/ii_"
+                                                    android:layout_marginTop="@dimen/_16sdp">
+
+                                                    <LinearLayout
+                                                        android:id="@+id/ll_time"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerHorizontal="true"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginBottom="@dimen/_15sdp"
+                                                        android:gravity="center"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:id="@+id/vpn_connect_time"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_centerHorizontal="true"
+                                                            android:layout_gravity="bottom|center_horizontal"
+                                                            android:layout_marginTop="@dimen/_5sdp"
+                                                            android:fontFamily="@font/popins_medium"
+                                                            android:gravity="bottom|center_horizontal"
+                                                            android:text="00:00:00"
+                                                            android:textColor="@color/colorWhite"
+                                                            android:textSize="@dimen/_30sdp"
+                                                            android:visibility="visible" />
+
+                                                        <RelativeLayout
+                                                            android:layout_width="160dp"
+                                                            android:layout_height="45dp"
+                                                            android:background="@drawable/ava_rec_box">
+
+                                                            <ImageView
+                                                                android:id="@+id/connected_icnn"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_centerVertical="true"
+                                                                android:layout_marginLeft="12dp"
+                                                                android:src="@drawable/ava_disconnect_icn" />
+
+                                                            <TextView
+                                                                android:id="@+id/connect_btn"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_centerHorizontal="true"
+                                                                android:layout_centerVertical="true"
+                                                                android:layout_gravity="bottom|center_horizontal"
+                                                                android:layout_marginLeft="10dp"
+                                                                android:layout_toRightOf="@+id/connected_icnn"
+                                                                android:fontFamily="@font/popins_medium"
+                                                                android:gravity="bottom|center_horizontal"
+                                                                android:text="Disconnect"
+                                                                android:textColor="@color/red"
+                                                                android:textSize="@dimen/_12sdp"
+                                                                android:visibility="visible" />
+                                                        </RelativeLayout>
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@+id/ll_feed"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="8dp"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="WiFi hotspot secure and protect privacy. Fastest - Connect successfully with high VPN speed."
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:textColor="@color/txt_clr"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="normal" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="5dp"
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:text="-100% fast, secure and stable"
+                                                        android:textColor="@color/txt_clr"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="normal" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="5dp"
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:text="- No registration required"
+                                                        android:textColor="@color/txt_clr"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="normal" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="5dp"
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:text="- High-speed bandwidth"
+                                                        android:textColor="@color/txt_clr"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="normal" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="5dp"
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:text="- Choose faster servers wisely"
+                                                        android:textColor="@color/txt_clr"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="normal" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:fontFamily="@font/popins_medium"
+                                                        android:text="- No configuration required..."
+                                                        android:textColor="@color/txt_clr"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="normal" />
+                                                </LinearLayout>
+
+                                                <TextView
+                                                    android:id="@+id/vpn_area_name"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerInParent="true"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="8dp"
+                                                    android:ellipsize="end"
+                                                    android:gravity="center"
+                                                    android:maxLines="2"
+                                                    android:text="@string/label_auto"
+                                                    android:textColor="@color/color_main_time_color"
+                                                    android:textSize="10dp"
+                                                    android:visibility="gone" />
+
+                                            </RelativeLayout>
+                                        </RelativeLayout>
+                                    </androidx.core.widget.NestedScrollView>
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/frame_container"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ava_rounded_btn"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/iv_dw_speed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="UL: 0 Kb, DL: 0 Kb"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/default_text_size"
+                                    android:visibility="visible"
+                                    tools:visibility="visible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ava_rounded_btn"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/iv_upload_speed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="UL: 0 Kb, DL: 0 Kb"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/default_text_size"
+                                    android:visibility="visible"
+                                    tools:visibility="visible" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ava_rounded_btn"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/traffic_limit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.7"
+                                    android:text="0 Mb of 0 Mb available"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/default_text_size"
+                                    android:visibility="visible"
+                                    tools:visibility="visible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ava_rounded_btn"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/selected_server"
+                                    style="@style/StateText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/unknown" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bottom_"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ava_bottom_bg">
+
+                <LinearLayout
+                    android:id="@+id/lay_home"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ava_ic_home_sel" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#56626B"
+                        android:textSize="9dp"
+                        android:visibility="gone"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/ln_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ava_line"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_security"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ava_ic_security_un" />
+
+                    <TextView
+                        android:id="@+id/tv_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="Security"
+                        android:textAlignment="center"
+                        android:textColor="#56626B"
+                        android:textSize="9dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/ln_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ava_line"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_network"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ava_ic_network_test_un" />
+
+                    <TextView
+                        android:id="@+id/tv_network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="Network Test"
+                        android:textAlignment="center"
+                        android:textColor="#56626B"
+                        android:textSize="9dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/ln_network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ava_line"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_location"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ava_ic_loaction_un" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/popins_medium"
+                        android:text="IP Location"
+                        android:textAlignment="center"
+                        android:textColor="#56626B"
+                        android:textSize="9dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/ln_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ava_line"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_splash_hide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ava_ic_splsh"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/popins_bold"
+                    android:text="VPN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/la_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="ic_splash.json"
+                    app:lottie_loop="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/la_view"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ava_txt_1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ava_txt" />
+
+                    <TextView
+                        android:id="@+id/tv_finding_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/la_view"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Please wait..."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:maxWidth="@dimen/_200sdp">
+
+        <include layout="@layout/silentsurfer_navigation_layout" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

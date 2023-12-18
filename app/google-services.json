@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348030523958",
+    "project_id": "vpn-app-81461",
+    "storage_bucket": "vpn-app-81461.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348030523958:android:35255a2e68153ccf421697",
+        "android_client_info": {
+          "package_name": "com.expressvpn.securesafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348030523958-dj5pmthm6pe32t1jjqcfts4pp30rptu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4j8NZcoNUy3cHsJvi0j2W05OPpOgHLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348030523958-dj5pmthm6pe32t1jjqcfts4pp30rptu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

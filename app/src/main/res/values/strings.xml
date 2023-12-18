@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">VPN - All Proxy VPN</string>
+
+
+    <string name="log_in">LOGIN</string>
+    <string name="disconnect">DISCONNECT</string>
+    <string name="unknown">UNKNOWN</string>
+
+    <string name="space_for">Space for ad</string>
+
+    <string name="app_error">Application error</string>
+    <string name="please_wait">Please Wait</string>
+
+    <string name="connected">Connected</string>
+
+    <string name="host_url_title">Host Url: </string>
+    <string name="carrier_id_title">Carrier ID: </string>
+
+    <string name="traffic_limit">%1$s of %2$s available</string>
+
+    <string name="connecting">Connecting...</string>
+    <string name="paused">Paused</string>
+    <string name="choose_server">Selecy Country</string>
+    <string name="label_auto">Auto</string>
+
+</resources>

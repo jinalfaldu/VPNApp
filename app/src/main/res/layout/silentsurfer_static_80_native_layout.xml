@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@null"
+    android:id="@+id/native_ad"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_58sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="@dimen/_4sdp"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Space for ad"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
